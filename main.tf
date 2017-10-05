@@ -37,7 +37,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.micro"
   subnet_id              = "subnet-b622aed0"
   vpc_security_group_ids = ["sg-55f65f28"]
-  count                  = "${var.count}"
+  count                  = 3
 
   tags = {
     Identity = "test-training-jb-mole"
